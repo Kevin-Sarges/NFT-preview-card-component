@@ -6,7 +6,7 @@ routes.get('/', (req, res) => {
 	return res.json({ testando: 'multer'});
 });
 
-routes.post('/uploads', multer(multerConfig).single('file'), (req, res) => {
+routes.post('/post', multer(multerConfig).single('file'), (req, res) => {
 	console.log(req.file);
 	return res.json({ testando: 'multer'});
 });
