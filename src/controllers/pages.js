@@ -19,14 +19,14 @@ module.exports = {
 
 	async post(req, res) {
 		const file = req.file;
-
+		
 		try {
 			const db = await Datatabase;
 			await valuesTable(db, {
 				name: file.originalname,
 				size: file.size,
 				key: file.filename,
-				url: file.path,
+				url: `http://localhost:8080/files/${file.filename}`,
 			});
 
 			return res.send('Dados da imagems foram guardados!!');
