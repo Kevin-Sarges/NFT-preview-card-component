@@ -1,16 +1,11 @@
 const routes = require('express').Router();
 const multer = require('multer');
-const multerConfig = require('./config/multer');
+const pages = require('./controllers/pages');
+const multerConfig = require('./controllers/config/multer');
 
-const Post = require('./models/createTableImage');
+routes.get('/', pages.index);
+routes.get('/post', pages.listPosts);
 
-routes.get('/', (req, res) => {
-	return res.json({ testando: 'multer'});
-});
-
-routes.post('/post', multer(multerConfig).single('file'), async (req, res) => {
-	console.log(req.file)
-	return res.json("Tudo certo");
-});
+routes.post('/post', multer(multerConfig).single('file'), pages.post);
 
 module.exports = routes;

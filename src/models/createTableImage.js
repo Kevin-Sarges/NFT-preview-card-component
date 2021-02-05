@@ -12,4 +12,4 @@ function saveImage(createTableImage){
 	`);
 }
 
-module.exports = Database.open(__dirname + '/database.sqlite').then(saveImage);
+module.exports = Database.open(__dirname + './database.sqlite').then(saveImage);
