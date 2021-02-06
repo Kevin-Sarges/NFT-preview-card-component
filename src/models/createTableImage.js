@@ -3,10 +3,8 @@ const Database = require('sqlite-async');
 function saveImage(createTableImage){
 	return createTableImage.exec(`
 		CREATE TABLE IF NOT EXISTS images (
-			id INTEGER PRIMARY KEY AUTOINCREMENT,
+			id TEXT PRIMARY KEY,
 			name TEXT,
-			size REAL,
-			key TEXT,
 			url TEXT
 		);
 	`);

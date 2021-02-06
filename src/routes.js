@@ -8,4 +8,6 @@ routes.get('/post', pages.listPosts);
 
 routes.post('/post', multer(multerConfig).single('file'), pages.post);
 
+routes.delete('/post/:id', pages.deleteImage);
+
 module.exports = routes;

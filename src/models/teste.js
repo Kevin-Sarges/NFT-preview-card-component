@@ -5,8 +5,6 @@ const insertValues = require('./insertValues');
 Database.then(async(image) => {
   /*await insertValues(image, {
 		name: 'logo.png',
-		size: 2093,
-		key: '354fqwsfasfwq5a68w3qd-logo.png',
 		url: 'http://localhost:8080/file/354fqwsfasfwq5a68w3qd-logo.png'
 	});*/
 

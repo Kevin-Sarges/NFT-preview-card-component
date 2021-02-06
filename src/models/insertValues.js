@@ -1,14 +1,12 @@
 function valuesTable(createTableImage, image){
 	return createTableImage.run(`
 		INSERT INTO images (
+			id,
 			name,
-			size,
-			key,
 			url
 		) VALUES (
+			"${image.id}",
 			"${image.name}",
-			"${image.size}",
-			"${image.key}",
 			"${image.url}"
 		);
 	`);
