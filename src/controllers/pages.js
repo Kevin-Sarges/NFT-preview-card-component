@@ -23,9 +23,8 @@ module.exports = {
 		try {
 			const db = await Datatabase;
 			await valuesTable(db, {
-				id: file.filename,
 				name: file.originalname,
-				url: `http://localhost:8080/files/${file.filename}`,
+				url: `http://localhost:8080/post/${file.filename}`,
 			});
 
 			return res.send('Dados da imagems foram guardados!!');
@@ -35,15 +34,14 @@ module.exports = {
 	},
 
 	async deleteImage(req, res) {
-		const file = req.file;
-
+		const id = req.params.id;
 		try {
 			const db = await Datatabase;
-			await db.run(`DELETE FROM images WHERE id = ${file.id}`);
+			await db.run(`DELETE FROM images WHERE id = ${id}`);
 
-			return res.send('Image deletada do banco de dados');
+			return res.send('Imagem deletada do banco de dados!!');	
 		} catch {
-			console.error('Erro ao deletar a imagem!!');
+			console.log(Error);
 		}
 	}
 }

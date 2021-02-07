@@ -11,6 +11,6 @@ Database.then(async(image) => {
 	const selectImages = await image.all('SELECT * FROM images');
 	console.log(selectImages);
 
-	//const deletImaga = await image.run('DELETE FROM images WHERE id = "Nº"');
-	//console.log(deletImaga);
+	//await image.run('DELETE FROM images WHERE id = "b471ab5ea286729f9cbc-LOGO1.png"');
+	//console.log('Images removida');
 });
