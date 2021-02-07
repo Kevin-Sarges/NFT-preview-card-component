@@ -9,6 +9,7 @@ app.set('view engine', 'hbs');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(require('./routes'));
+app.use(express.static('public'));
 app.use('/post', express.static(path.resolve(__dirname, '..', 'uploads')));
 
 app.listen(port || process.env.PORT, () => {

@@ -27,7 +27,8 @@ module.exports = {
 				url: `http://localhost:8080/post/${file.filename}`,
 			});
 
-			return res.send('Dados da imagems foram guardados!!');
+			return res.redirect('/');
+			// return res.send('Dados da imagems foram guardados!!');
 		} catch {
 			console.error('Erro ao salvar os dados da imagens!!');
 		}
