@@ -3,7 +3,7 @@ const valuesTable = require('../models/insertValues');
 
 module.exports = {
 	index(req, res) {
-		return res.json({ 'teste': 'Multer' });
+		return res.render('index');
 	},
 
 	async listPosts(req, res) {
