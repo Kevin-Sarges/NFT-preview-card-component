@@ -53,6 +53,7 @@ A requisição delete so vai deletar do banco de dados e nao da pasta uploads.
 - Express
 - Multer
 - Crypto
+- Knex
 - SQLite
 - Hbs
 
@@ -60,4 +61,6 @@ A requisição delete so vai deletar do banco de dados e nao da pasta uploads.
 
 - Eu utilizei o Crypto para grear um nome diferente com caracteres diferentes para as imagens assim não vai dar conflito na hora de salvar os nomes das imagens no banco de dados. Com o crypto você pode gerar ids aleatorios para os seu banco de dados.
 
-- O hbs é um templating engine para Node para paginas dinamicas.
+- O hbs é um templating engine que server para gerar paginas dinamicas. (Link da documentação: https://handlebarsjs.com/)
+
+- O Knex é um query builder que ajuda na criação e manipulação de banco de dado. (Link da documentação: http://knexjs.org/)
