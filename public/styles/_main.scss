@@ -1,0 +1,107 @@
+main {
+  width: 300px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: $Very-dark-blue-card-BG;
+  border-radius: 10px;
+
+  .image {
+    padding: 130px;
+    border-radius: 10px;
+    background: url("../images/image-equilibrium.jpg") no-repeat center/100%;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    &:hover {
+      background: $Cyan url("../images/icon-view.svg") no-repeat center/20%;
+      opacity: 0.6;
+      cursor: pointer;
+    }
+  }
+
+  h1 {
+    font-size: 22px;
+    color: $White;
+    padding: 10px 0px;
+
+    &:hover {
+      color: $Cyan;
+      cursor: pointer;
+    }
+  }
+
+  p {
+    line-height: 25px;
+  }
+
+  .constainer {
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+    justify-content: space-between;
+
+    .eth {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 10px;
+        margin-right: 5px;
+      }
+
+      p {
+        color: $Cyan;
+      }
+    }
+
+    .day {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 18px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .perfil {
+    display: flex;
+    padding: 10px 0px;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: 1px solid $Very-dark-blue-line-BG;
+
+    img {
+      width: 35px;
+      margin-right: 15px;
+      object-fit: cover;
+      border-radius: 999px;
+      border: 2px solid $White;
+    }
+
+    b {
+      color: $White;
+
+      &:hover {
+        color: $Cyan;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

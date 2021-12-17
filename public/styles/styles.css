@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+html body {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  background-color: #0d192b;
+  color: #8bacda;
+}
+
+@media (max-width: 1024px) {
+  html body {
+    font-size: 14px;
+  }
+}
+
+main {
+  width: 300px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #14253d;
+  border-radius: 10px;
+}
+
+main .image {
+  padding: 130px;
+  border-radius: 10px;
+  background: url("../images/image-equilibrium.jpg") no-repeat center/100%;
+}
+
+main .image img {
+  width: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .image:hover {
+  background: #00fff7 url("../images/icon-view.svg") no-repeat center/20%;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+main h1 {
+  font-size: 22px;
+  color: white;
+  padding: 10px 0px;
+}
+
+main h1:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+main p {
+  line-height: 25px;
+}
+
+main .constainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .constainer .eth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .constainer .eth img {
+  width: 10px;
+  margin-right: 5px;
+}
+
+main .constainer .eth p {
+  color: #00fff7;
+}
+
+main .constainer .day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .constainer .day img {
+  width: 18px;
+  margin-right: 5px;
+}
+
+main .perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-top: 1px solid #2f415b;
+}
+
+main .perfil img {
+  width: 35px;
+  margin-right: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 999px;
+  border: 2px solid white;
+}
+
+main .perfil b {
+  color: white;
+}
+
+main .perfil b:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styles.css.map */
